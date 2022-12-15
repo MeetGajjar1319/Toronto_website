@@ -1,62 +1,128 @@
-<html lang="en">
-<head>
-    
-    <title> Login</title>
-
-    <script src="js/jquery-3.5.1.min.js"> </script> 
-
-    <link rel="stylesheet" href="login.css"/>
-    
-  <script src="login.js" > </script> 
- 
-</head>
-<body>
+/* Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
   
-  <!-- <div class="contact-form">
-  <div class="container">
-
-    <img src="logo1.jpg" class="user" >
-    <form id= "first_form" action="thankyou2.html" target="_blank" autocomplete="off" type="post">
-  <div class="login">
-      <br>
-      <br>
-    </div>
-      <label for="firstname">UserName:</label>
-      <input type="text" name="first_name" id="first_name" placeholder="Enter Your Username"/>
-  
-  
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" placeholder="Enter your Password"/>
+  body {
+    font-family: "Open Sans";
+    font-size: 14px;
+        margin: 0;
+        padding: 0;
+        background: rgb(224, 224, 224);
+        background-size: cover;
+        background-position: center;
+        /* background: rgba(0, 0, 0, 0.7) url('pic.PNG'); */
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
+        font-family: sans-serif;
+        margin-top: 80px;
     
-      <button type="submit" value="Send" class="btn"  >Log in</button>
-    
-       <br>
-     
-        <p> Username must be all letters and numbers</p>
-        <p> Username must begin with a letter</p>
-        <br>
-        <p> Password must be at least 8 characters long <p> 
-          <p> Password must be atleast 1 letter</p> 
-          <p> Password must have least one special characters </p> 
-          <p> Password must be atleast 1 number </p> 
-            <br>
-    </form>
-  </div> -->
-  </div>
+  }
   
-  <script src="script2.js"></script>
+  .container {
+    width: 500px;
+    margin: 25px auto;
+  }
+  
+  
+  form {
+    padding: 41px;
+    color: black;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 50px;
+    background: darkgray;
+    
+  }
+  form label,
+  form input,
+  form button {
+    border: 0;
+    margin-bottom: 9px;
+    display: block;
+    width: 100%;
+  }
+  form input {
+    height: 25px;
+    line-height: 25px;
+    background: white ;
+    color: #000;
+    padding: 0 6px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  form button {
+    height: 30px;
+    line-height: 30px;
+    background: black;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+  }
 
-  <div class ="footer">
-    <footer >
-      <p>&copy; 2021 by Group 9 (Dhruv Dave-N01401657, Utsav Sharma-N01392141, Meet Gajjar-N01391319, Sukhvir Brar-N01395820) </p>
-      <ul class="nav-list">
-        <li> <a href="index.html" > Home</a> </li>
-        <li> <a href="visit.html" > Information</a> </li>
-        <li> <a href="feedback.html" >Feebdack </a></li>
-        <li> <a href="about_us.html"  >AboutUs</a></li>
- </ul>
-    </footer>
-  </div>
-</body>
+form button:hover{
+  background: white;
+  color: black;
+}
 
-</html>
+  form .error {
+    color: #ff0000;
+  }
+  .login{
+    text-align: center;
+  }
+  
+  .user{
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: calc(44px/2);
+    left: calc(50% - 69px);
+    border-radius: 50%;
+  }
+  .footer p{
+    color:black;
+    text-align: center; 
+    padding: 16px;   
+    } 
+    
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #ffd740;
+      text-align: center;
+    }
+    .nav-list{
+      width: 50%;
+      align-items:center;
+      text-align: center;
+      display: flex;
+      
+    
+    }
+    .nav-list li{
+      list-style: none;
+      padding: 10px 160px;
+      align-items: center;
+      text-align: center;
+      }
+      
+      .nav-list li a{
+      text-decoration: none;
+      text-size-adjust: 20px;
+      color: black;
+      align-items: center;
+      }
+      .nav-list li a:hover{
+        color:blue;
+        }
+    
+        .first-section{
+          text-align: center;
+          align-items: center;
+        }
